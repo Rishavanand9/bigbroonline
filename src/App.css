@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  width: min-content;
   background-color: white;
   background-image: linear-gradient(360deg, #83790a1e, #9a41351f);
 }
