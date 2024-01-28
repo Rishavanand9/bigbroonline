@@ -43,7 +43,7 @@ function Contact() {
             marginLeft: 2,
           }}
         >
-          +911234567890
+         +91-874650000
         </Typography>
       </Button>
     </div>
