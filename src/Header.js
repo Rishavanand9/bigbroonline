@@ -17,7 +17,7 @@ const Header = () => {
 
   const handleWhatsAppClick = () => {
     console.log("WhatsApp clicked");
-    // Add your WhatsApp click logic here
+    window.open("https://wa.me/87465000");
   };
 
   const handleFacebookClick = () => {
@@ -27,55 +27,80 @@ const Header = () => {
 
   const handleInstagramClick = () => {
     console.log("Instagram clicked");
-    window.open("https://www.instagram.com/bigbroonlinebook/?igsh=MWhwdnJldTJ5c2xpeQ%3D%3D&utm_source=qr")
+    window.open(
+      "https://www.instagram.com/bigbroonlinebook/?igsh=MWhwdnJldTJ5c2xpeQ%3D%3D&utm_source=qr"
+    );
     // Add your Instagram click logic here
   };
 
   const handleTelegramClick = () => {
     console.log("Telegram clicked");
-    window.open("https://t.me/bigbroonlinebook")
+    window.open("https://t.me/bigbroonlinebook");
     // Add your Telegram click logic here
   };
 
   const buttonPad = isMobile ? 10 : 40;
   return (
-    <AppBar position="static" className="appBar" style={{ boxShadow: "none" }}>
-      <Toolbar style={{alignItems: 'self-start'}}>
+    <AppBar
+      position="static"
+      className="appBar"
+      style={{
+        boxShadow: "none",
+        position: "fixed",
+        top: 0,
+        zIndex: 1,
+        background: "none",
+        height: isMobile ? "5em" : "10em",
+        borderRadius: "0px 0px 100px 0px",
+        backgroundImage: "linear-gradient(360deg, #a1c6e4ea, #141805ee)",
+      }}
+    >
+      <Toolbar style={{ alignItems: "self-start" }}>
         <img
           src={logo1}
           alt="logo"
           style={{
-            maxWidth: isMobile ? 150 : 350,
+            maxWidth: isMobile ? 110 : 180,
             height: "auto",
             border: "2px solid #000",
             borderRadius: "15em",
             margin: isMobile ? 10 : 50,
           }}
         />
-        {/* <div
-          style={{
-            maxWidth: isMobile ? 80 : 120,
-            height: "100px",
-            width: "100px",
-            border: "5px solid #fff",
-            borderRadius: "60px",
-            margin: "10px",
-          }}
-        ></div> */}
         <div style={{ flexGrow: 1 }}></div>
-        <IconButton style={{padding: buttonPad}} color="inherit" onClick={handleWhatsAppClick}>
+        <IconButton
+          style={{ padding: buttonPad }}
+          color="inherit"
+          onClick={handleWhatsAppClick}
+        >
           <WhatsAppIcon fontSize={isMobile ? "default" : "large"} />
         </IconButton>
-        <IconButton style={{padding: buttonPad}}  color="inherit" onClick={handleFacebookClick}>
+        <IconButton
+          style={{ padding: buttonPad }}
+          color="inherit"
+          onClick={handleFacebookClick}
+        >
           <FacebookIcon fontSize={isMobile ? "default" : "large"} />
         </IconButton>
-        <IconButton style={{padding: buttonPad}}  color="inherit" onClick={handleInstagramClick}>
+        <IconButton
+          style={{ padding: buttonPad }}
+          color="inherit"
+          onClick={handleInstagramClick}
+        >
           <InstagramIcon fontSize={isMobile ? "default" : "large"} />
         </IconButton>
-        <IconButton style={{padding: buttonPad}}  color="inherit" onClick={handleTelegramClick}>
+        <IconButton
+          style={{ padding: buttonPad }}
+          color="inherit"
+          onClick={handleTelegramClick}
+        >
           <TelegramIcon fontSize={isMobile ? "default" : "large"} />
         </IconButton>
-        <IconButton style={{padding: buttonPad}}  color="inherit" onClick={() => {}}>
+        <IconButton
+          style={{ padding: buttonPad }}
+          color="inherit"
+          onClick={() => {}}
+        >
           <AccountCircle fontSize={isMobile ? "default" : "large"} />
         </IconButton>
       </Toolbar>

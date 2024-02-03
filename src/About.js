@@ -132,14 +132,14 @@ const About = () => {
           fontSize: isMobile ? 15 : 30,
           color: "#FFFFFF",
           padding: 1,
-          background: "#fff",
+          background: "#000",
         }}
       >
         <img
           alt="someTExt"
           src={img10}
           style={{
-            width: isMobile ? 200 : 600,
+            width:  isMobile ? '95%' : '80%',
             height: "auto",
           }}
         />

@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import useTheme from "@mui/material/styles/useTheme";
+// import useMediaQuery from "@mui/material/useMediaQuery";
+// import useTheme from "@mui/material/styles/useTheme";
 import "./App.css";
 
 const Ads = ({ slides }) => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  // const theme = useTheme();
+  // const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const slideRef = useRef();
