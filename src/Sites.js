@@ -4,11 +4,11 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import useTheme from "@mui/material/styles/useTheme";
 import { Button, Typography } from "@mui/material";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import casino from './assets/casino.png'
-import board from './assets/board.png'
-import cricket from './assets/cricket.png'
-import football from './assets/football.png'
-import hr from './assets/hr.png'
+import casino from "./assets/casino.png";
+import board from "./assets/board.png";
+import cricket from "./assets/cricket.png";
+import football from "./assets/football.png";
+import hr from "./assets/hr.png";
 
 const sites = [
   {
@@ -66,6 +66,11 @@ const Sites = () => {
     window.open(url);
   };
 
+  const handleWhatsAppClick = () => {
+    console.log("WhatsApp clicked");
+    window.open("https://wa.me/+918970160000");
+  };
+
   return (
     <>
       <div className="body-content">
@@ -74,7 +79,7 @@ const Sites = () => {
             fontWeight: 600,
             fontSize: isMobile ? 20 : 45,
             color: "white",
-            textShadow: '0px 0px 8px #FFFFFF',
+            textShadow: "0px 0px 8px #FFFFFF",
           }}
         >
           VARIOUS PLATFORMS TO TEST YOUR LUCK WITH, SO GO AHEAD & WIN BIG
@@ -82,7 +87,7 @@ const Sites = () => {
         <div className="siteContainer">
           {sites.map((item, index) => (
             <div
-            className={'siteItem'}
+              className={"siteItem"}
               onClick={(e) => handleSiteClick(e, item?.url)}
             >
               <img
@@ -104,25 +109,25 @@ const Sites = () => {
             fontWeight: 600,
             fontSize: isMobile ? 20 : 45,
             color: "white",
-            textShadow: '0px 0px 8px #FFFFFF',
+            textShadow: "0px 0px 8px #FFFFFF",
           }}
         >
           THE FIRST CHOICE OF GAMER'S LIKE YOU
         </Typography>
         <div className="gameContainer">
           {games.map((item, index) => (
-           <div className="gameItem">
+            <div className="gameItem">
               <img
                 key={index}
                 src={item.imgUrl}
                 alt={`site`}
                 style={{
                   width: `${imageSize}px`,
-                  height: 'auto',
-                  borderRadius: '10em',
+                  height: "auto",
+                  borderRadius: "10em",
                 }}
               />
-         </div>
+            </div>
           ))}
         </div>
         <Typography
@@ -130,13 +135,13 @@ const Sites = () => {
             fontWeight: 600,
             fontSize: isMobile ? 20 : 45,
             color: "white",
-            textShadow: '0px 0px 8px #FFFFFF',
+            textShadow: "0px 0px 8px #FFFFFF",
           }}
           margin={2}
         >
           YOUR TICKET TO GAMING WORLD OF BIG BRO ONLINE
         </Typography>
-        <Button className="WhatsappButton">
+        <Button className="WhatsappButton" onClick={handleWhatsAppClick}>
           <WhatsAppIcon
             fontSize={isMobile ? "default" : "large"}
             sx={{ color: "#fff", fontSize: 40 }}
@@ -145,7 +150,7 @@ const Sites = () => {
           <Typography
             sx={{
               fontWeight: 600,
-              fontSize: isMobile ? 20 : 45,
+              fontSize: isMobile ? 15 : 30,
               color: "white",
               marginLeft: 2,
             }}

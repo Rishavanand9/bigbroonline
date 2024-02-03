@@ -17,7 +17,7 @@ const Header = () => {
 
   const handleWhatsAppClick = () => {
     console.log("WhatsApp clicked");
-    window.open("https://wa.me/87465000");
+    window.open("https://wa.me/+918746850000");
   };
 
   const handleFacebookClick = () => {

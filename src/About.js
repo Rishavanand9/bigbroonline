@@ -28,7 +28,7 @@ const gridContent = [
     img: "https://kalyanbook.com/wp-content/uploads/2023/01/ic4-150x150.png",
     text1: "INSTANT WITHDRAWAL & REFILL",
     text2:
-      "The Kalyan Book provides instant service of id withdrawal & refilling with min to max amount.",
+      "The Big Bro Book provides instant service of id withdrawal & refilling with min to max amount.",
   },
   {
     img: "https://kalyanbook.com/wp-content/uploads/2023/01/ic5-150x150.png",

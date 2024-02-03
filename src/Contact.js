@@ -11,6 +11,11 @@ function Contact() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const imageSize = isMobile ? 100 : 300; // Adjust the sizes as needed
 
+  const handleWhatsAppClick = () => {
+    console.log("WhatsApp clicked");
+    window.open("https://wa.me/+918746850000");
+  };
+
   return (
     <div className="body-content">
       <img
@@ -34,7 +39,7 @@ function Contact() {
       >
         Contact Us
       </Typography>
-      <Button className="WhatsappButton">
+      <Button className="WhatsappButton" onClick={handleWhatsAppClick}>
       <WhatsAppIcon
             fontSize={isMobile ? "default" : "large"}
             sx={{ color: "#fff", fontSize: 40 }}
@@ -42,12 +47,12 @@ function Contact() {
         <Typography
           sx={{
             fontWeight: 600,
-            fontSize: isMobile ? 20 : 45,
+            fontSize: isMobile ? 15 : 30,
             color: "white",
             marginLeft: 2,
           }}
         >
-         +91-874650000
+         +918746850000
         </Typography>
       </Button>
     </div>
