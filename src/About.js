@@ -50,7 +50,7 @@ const About = () => {
   const imageSize = isMobile ? 90 : 150; // Adjust the sizes as needed
 
   return (
-    <div className="body-content">
+    <div className="body-content2">
       <Typography
         sx={{
           fontWeight: 600,

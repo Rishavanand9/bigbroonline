@@ -52,7 +52,8 @@ const Header = () => {
         background: "none",
         height: isMobile ? "5em" : "10em",
         borderRadius: "0px 0px 100px 0px",
-        backgroundImage: "linear-gradient(360deg, #a1c6e4ea, #141805ee)",
+        // background: 'transparent'
+        backgroundImage: "linear-gradient(360deg, #fdb7f0e3, #076568f5)",
       }}
     >
       <Toolbar style={{ alignItems: "self-start" }}>

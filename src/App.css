@@ -13,16 +13,28 @@
 
 .appBar {
   position: fixed;
-  background-image: linear-gradient(360deg, #a1c6e4ea, #141805ee);
+  background-image: linear-gradient(360deg, #f9c9d4, #a7d8fd);
 }
 
 .body-content {
   overflow-y: auto;
   padding: 25px;
   margin: 20px;
+  /* background-image: url("https://sprintersgames.in/wp-content/uploads/2022/01/BBL_Cricket_BG_Desktop.jpeg"); */
   border-radius: 30px 0 150px 0px; /* Curved on the left side, straight on the right */
-  background-image: linear-gradient(360deg, #a1c6e4, #141805);
+  background-image: linear-gradient(360deg, #f9c9d4, #a7d8fd);
 }
+
+
+.body-content2 {
+  overflow-y: auto;
+  padding: 25px;
+  margin: 20px;
+  background-image: url("https://sprintersgames.in/wp-content/uploads/2022/01/BBL_Cricket_BG_Desktop.jpeg");
+  border-radius: 30px 0 150px 0px; /* Curved on the left side, straight on the right */
+  /* background-image: linear-gradient(360deg, #f9c9d4, #a7d8fd); */
+}
+
 
 .siteContainer {
   display: flex;
@@ -39,7 +51,7 @@
   display: flex;
   border-radius: 0em 0em 1em 0em;
   border: 2px solid white;
-  background: black
+  background: rgb(70, 70, 70)
 }
 
 .gameContainer {
@@ -102,7 +114,7 @@
   border-radius: 30px 0 150px 0px; /* Curved on the left side, straight on the right */
   margin: 10px;
   padding: 20px;
-  background-image: linear-gradient(360deg, #a1c6e4, #141805);
+  background-image: linear-gradient(360deg, #f9c9d4, #a7d8fd);
 }
 
 .WhatsappButton {
