@@ -141,10 +141,14 @@ const Sites = () => {
         >
           YOUR TICKET TO GAMING WORLD OF BIG BRO ONLINE
         </Typography>
-        <Button className="WhatsappButton" onClick={handleWhatsAppClick}>
+        <Button
+          className="WhatsappButton"
+          onClick={handleWhatsAppClick}
+          style={{ width: isMobile ? "65%" : "25%", borderRadius: "10em" }}
+        >
           <WhatsAppIcon
             fontSize={isMobile ? "default" : "large"}
-            sx={{ color: "#fff", fontSize: 40 }}
+            sx={{ color: "#fff", fontSize: 30 }}
           />
 
           <Typography

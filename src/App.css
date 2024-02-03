@@ -106,10 +106,8 @@
 }
 
 .WhatsappButton {
-  height: 5em;
-  width: 65%;
+  height: 3em;
   background-image: linear-gradient(360deg, #020202, #141805);
-  width: 80%;
 }
 
 .aboutContainer1 {

@@ -33,17 +33,21 @@ function Contact() {
           fontWeight: 600,
           fontSize: isMobile ? 20 : 45,
           color: "white",
-          textShadow: '0px 0px 8px #FFFFFF',
+          textShadow: "0px 0px 8px #FFFFFF",
         }}
         margin={2}
       >
         Contact Us
       </Typography>
-      <Button className="WhatsappButton" onClick={handleWhatsAppClick}>
-      <WhatsAppIcon
-            fontSize={isMobile ? "default" : "large"}
-            sx={{ color: "#fff", fontSize: 40 }}
-          />
+      <Button
+        className="WhatsappButton"
+        onClick={handleWhatsAppClick}
+        style={{ width: isMobile ? "65%" : "25%", borderRadius: "10em" }}
+      >
+        <WhatsAppIcon
+          fontSize={isMobile ? "default" : "large"}
+          sx={{ color: "#fff", fontSize: 30 }}
+        />
         <Typography
           sx={{
             fontWeight: 600,
@@ -52,7 +56,7 @@ function Contact() {
             marginLeft: 2,
           }}
         >
-         +918746850000
+          +918746850000
         </Typography>
       </Button>
     </div>
