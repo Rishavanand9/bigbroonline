@@ -4,6 +4,7 @@ import "./App.css";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import useTheme from "@mui/material/styles/useTheme";
 import { Button, Typography } from "@mui/material";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 function Contact() {
   const theme = useTheme();
@@ -34,7 +35,10 @@ function Contact() {
         Contact Us
       </Typography>
       <Button className="WhatsappButton">
-
+      <WhatsAppIcon
+            fontSize={isMobile ? "default" : "large"}
+            sx={{ color: "#fff", fontSize: 40 }}
+          />
         <Typography
           sx={{
             fontWeight: 600,

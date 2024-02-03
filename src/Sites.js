@@ -91,7 +91,7 @@ const Sites = () => {
                 alt={`site`}
                 style={{
                   width: `${imageSize}px`,
-                  height: "auto",
+                  maxHeight: 111,
                 }}
               />
             </div>
@@ -118,7 +118,8 @@ const Sites = () => {
                 alt={`site`}
                 style={{
                   width: `${imageSize}px`,
-                  height: "auto",
+                  height: 'auto',
+                  borderRadius: '10em',
                 }}
               />
          </div>
