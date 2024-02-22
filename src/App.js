@@ -1,43 +1,52 @@
-// App.js
 import React from "react";
+import { Provider } from "react-redux";
+import store from "./store";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
+import { ThemeProvider } from "@mui/material/styles";
+
+import theme from "./utils/customTheme";
+import Home from "./pages/Home";
+import Game from "./pages/Game";
+import AllComponents from "./pages/AllComponents";
+import AppBarComponent from "./components/Appbar";
 import "./App.css";
-import Header from "./Header";
-import Sites from "./Sites";
-import Ads from "./Ads";
-import About from "./About";
-import Contact from "./Contact";
-import img5 from "./assets/5.png";
-import img6 from "./assets/6.png";
-import img7 from "./assets/7.png";
-import img8 from "./assets/8.png";
-import img9 from "./assets/9.png";
-import img11 from "./assets/11.png";
-import img16 from "./assets/16.png";
-import img13 from "./assets/13.png";
-import img14 from "./assets/14.png";
-import img15 from "./assets/15.png";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import useTheme from "@mui/material/styles/useTheme";
-
-const slides = [img5, img6, img7, img8, img9, img11];
-
-const slides2 = [img16, img13, img14, img15];
+import { Typography } from "@mui/material";
 
 function App() {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-
   return (
-    <div className="App" >
-      <Header />
-      <div style={{marginTop: isMobile ? '8em' : '16em'}}>
-        <Ads slides={slides} />
-        <About />
-        <Sites />
-        <Ads slides={slides2} />
-        <Contact />
-      </div>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Provider store={store}>
+        <Router>
+          <AppBarComponent />
+
+          <div class="container">
+            <div class="marquee">
+              <Typography class="message">
+                Note: Game Update " 9PM game starts at 10 Pm"
+              </Typography>
+            </div>
+          </div>
+
+          <div style={{ marginTop: "1px" }}>
+            <Routes>
+              <Route exact path="/homePage" element={<Home />} />
+              <Route
+                exact
+                path="/components-demo"
+                element={<AllComponents />}
+              />
+              <Route path="/game/:gameId" element={<Game />} />
+              <Route path="*" element={<Navigate to="/homePage" />} />
+            </Routes>
+          </div>
+        </Router>
+      </Provider>
+    </ThemeProvider>
   );
 }
 
